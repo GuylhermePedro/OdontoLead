@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Class1
+    [Serializable]
+    public class Origem
     {
+        public int idrotigem { get; set; }
+
+        public String origem_descricao { get; set; }
     }
 }
