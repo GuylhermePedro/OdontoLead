@@ -18,5 +18,12 @@ namespace Model
         public DateTime data_lead { get; set; }
 
         public Origem origem { get; set; }
+
+        public String descricao_lead { get; set; }
+
+        public Status Status { get; set; }
+
+        public Clinica clinina { get; set; }
+
     }
 }

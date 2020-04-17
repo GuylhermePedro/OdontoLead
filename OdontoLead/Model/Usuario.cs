@@ -13,6 +13,10 @@ namespace Model
         public String Nome { get; set; }
         public String Cpf { get; set; }
 
+        public String Email { get; set; }
+
+        public String Telefone_usuario { get; set; }
+
         public String Senha { get; set; }
 
         public List<Pagina> listaPaginaAcesso { get; set; }

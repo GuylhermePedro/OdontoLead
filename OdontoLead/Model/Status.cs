@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 namespace Model
 {
     [Serializable]
-    public class Paginas
+    public class Status
     {
-        public int idPagina { get; set; }
+        public int idStatus { get; set; }
 
-        public String url { get; set; }
+        public String Descricao_status { get; set; }
 
-        public String descricao { get; set; }
     }
 }
