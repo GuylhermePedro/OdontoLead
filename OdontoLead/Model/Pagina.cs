@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Model
 {
     [Serializable]
-    public class Paginas
+    public class Pagina
     {
         public int idPagina { get; set; }
 

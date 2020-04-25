@@ -29,7 +29,7 @@ namespace Controller
                        senha
                 from usuario
                 where cpf_usuario = @cpf
-                and senha = md5(@senha) ");
+                and senha = md5('@senha') ");
 
             conx.Abrir();
 
@@ -53,34 +53,6 @@ namespace Controller
             us.Senha = reader.GetString(4);
 
             reader.Close();
-
-            cmd = new MySqlCommand(@"
-                select distinct pagina.idpagina,
-                       pagina.url,
-	                   pagina.descricao
-                 from pagina
-                 inner join usuario_pagina on usuario_pagina.idPagina = pagina.idPagina
-                 where usuario_pagina.idusuario = @IdUsuario");
-
-            cmd.Parameters.Add(new MySqlParameter("IdUsuario", us.idUsuario));
-
-            reader = conx.Pesquisar(cmd);
-
-            while (reader.Read())
-            {
-
-                Paginas p = new Paginas();
-
-                p.idPagina = reader.GetInt32(0);
-
-                if (reader["url"] != DBNull.Value)
-                    p.url = reader.GetString(1);
-
-                p.descricao = reader.GetString(2);
-
-                us.listaPaginaAcesso.Add(p);
-
-            }
 
             conx.Fechar();
 
@@ -125,6 +97,36 @@ namespace Controller
             MySqlCommand cmd = new MySqlCommand(@"select * from usuario where cpf_usuario = @cpf");
 
             cmd.Parameters.Add(new MySqlParameter("cpf", objEntrada.Cpf));
+
+            Conexao c = new Conexao();
+
+            c.Abrir();
+
+            MySqlDataReader reader = c.Pesquisar(cmd);
+
+            bool verificar = reader.Read();
+
+            c.Fechar();
+
+            if (!verificar)
+            {
+
+                cmd = new MySqlCommand("insert into usuario values(default, @nome, @cpf, @email, @tel, MD5('@senha'), null)");
+
+                cmd.Parameters.Add(new MySqlParameter("nome", objEntrada.Nome));
+                cmd.Parameters.Add(new MySqlParameter("cpf", objEntrada.Cpf));
+                cmd.Parameters.Add(new MySqlParameter("email", objEntrada.Email));
+                cmd.Parameters.Add(new MySqlParameter("tel", objEntrada.Telefone_usuario));
+                cmd.Parameters.Add(new MySqlParameter("senha", objEntrada.Senha));
+
+                c.Abrir();
+                c.Executar(cmd);
+                c.Fechar();
+            }
+            else
+            {
+                throw new ConsistenciaException("Esse Cpf já está cadastrado");
+            }
         }
     }
 }
