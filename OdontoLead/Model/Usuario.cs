@@ -19,11 +19,7 @@ namespace Model
 
         public String Senha { get; set; }
 
-        public List<Pagina> listaPaginaAcesso { get; set; }
+        public Clinica clinica { get; set; }
 
-        public Usuario()
-        {
-            listaPaginaAcesso = new List<Pagina>();
-        }
     }
 }

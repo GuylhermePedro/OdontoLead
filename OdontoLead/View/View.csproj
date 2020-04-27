@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="privado\dadosclinica.aspx" />
     <Content Include="privado\dashboard.aspx" />
     <Content Include="publico\Erro.aspx" />
     <Content Include="publico\novo-usuario.aspx" />
@@ -76,6 +77,13 @@
   <ItemGroup>
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\dadosclinica.aspx.cs">
+      <DependentUpon>dadosclinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\dadosclinica.aspx.designer.cs">
+      <DependentUpon>dadosclinica.aspx</DependentUpon>
     </Compile>
     <Compile Include="privado\dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>

@@ -47,7 +47,20 @@ namespace View.publico
 
                 Session.Add("usuarioLogado", ul);
 
-                Response.Redirect("/privado/dashboard.aspx");
+                bool verifica = uc.verificar_clinica(ul);
+
+                if(verifica==false) 
+                {
+
+                    Response.Redirect("/privado/dadosclinica.aspx");
+                }
+                else
+                {
+                    Response.Redirect("/privado/dashboard.aspx");
+                }
+
+ 
+                
 
             }
             catch (ConsistenciaException ex)
