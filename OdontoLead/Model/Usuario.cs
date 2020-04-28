@@ -21,5 +21,12 @@ namespace Model
 
         public Clinica clinica { get; set; }
 
+        public List<Pagina> ListaPaginaAcesso { get; set; }
+
+        public Usuario()
+        {
+            ListaPaginaAcesso = new List<Pagina>();
+        }
+
     }
 }
