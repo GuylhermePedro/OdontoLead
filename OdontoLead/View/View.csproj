@@ -67,23 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="privado\dadosclinica.aspx" />
     <Content Include="privado\dashboard.aspx" />
+    <Content Include="privado\lista-contatos.aspx" />
+    <Content Include="privado\novo-contato.aspx" />
     <Content Include="publico\Erro.aspx" />
-    <Content Include="publico\novo-usuario.aspx" />
     <Content Include="publico\inicio.aspx" />
+    <Content Include="publico\nova-clincia.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="privado\dadosclinica.aspx.cs">
-      <DependentUpon>dadosclinica.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="privado\dadosclinica.aspx.designer.cs">
-      <DependentUpon>dadosclinica.aspx</DependentUpon>
     </Compile>
     <Compile Include="privado\dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
@@ -91,6 +85,20 @@
     </Compile>
     <Compile Include="privado\dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privado\lista-contatos.aspx.cs">
+      <DependentUpon>lista-contatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\lista-contatos.aspx.designer.cs">
+      <DependentUpon>lista-contatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privado\novo-contato.aspx.cs">
+      <DependentUpon>novo-contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\novo-contato.aspx.designer.cs">
+      <DependentUpon>novo-contato.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="publico\Erro.aspx.cs">
@@ -100,19 +108,19 @@
     <Compile Include="publico\Erro.aspx.designer.cs">
       <DependentUpon>Erro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="publico\novo-usuario.aspx.cs">
-      <DependentUpon>novo-usuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="publico\novo-usuario.aspx.designer.cs">
-      <DependentUpon>novo-usuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="publico\inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="publico\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publico\nova-clincia.aspx.cs">
+      <DependentUpon>nova-clincia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publico\nova-clincia.aspx.designer.cs">
+      <DependentUpon>nova-clincia.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

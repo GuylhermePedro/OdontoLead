@@ -13,5 +13,15 @@ namespace View.privado
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/privado/novo-contato.aspx");
+        }
+
+        protected void btnContato_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/privado/lista-contatos.aspx");
+        }
     }
 }

@@ -12,7 +12,7 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="CPF:"></asp:Label>
         </div>
-        <asp:TextBox ID="txtCpf" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtCpf" runat="server" MaxLength="14"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Senha:"></asp:Label>
         <br />

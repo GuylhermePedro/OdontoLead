@@ -13,15 +13,15 @@ namespace Model
 
         public String nome_lead { get; set; }
 
-        public int fone_lead { get; set; }
+        public String fone_lead { get; set; }
 
         public DateTime data_lead { get; set; }
 
-        public Origem origem { get; set; }
+        public String sexo_lead { get; set; }
+
+        public String origem_lead { get; set; }
 
         public String descricao_lead { get; set; }
-
-        public Status Status { get; set; }
 
         public Clinica clinina { get; set; }
 

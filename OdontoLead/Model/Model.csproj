@@ -43,15 +43,11 @@
   <ItemGroup>
     <Compile Include="Clinica.cs" />
     <Compile Include="ConsistenciaException.cs" />
-    <Compile Include="Estado.cs" />
     <Compile Include="Lead.cs" />
-    <Compile Include="Nivel_Acesso.cs" />
     <Compile Include="Origem.cs" />
     <Compile Include="Pagina.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Status.cs" />
-    <Compile Include="Tipo_Usuario.cs" />
-    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

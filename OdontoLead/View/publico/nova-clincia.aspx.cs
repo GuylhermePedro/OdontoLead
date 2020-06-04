@@ -7,10 +7,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace View.publico
 {
-    public partial class cadastro_usuario : PageBase
+    public partial class nova_clincia : PageBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,15 +26,13 @@ namespace View.publico
             try
             {
 
-                Usuario us = new Usuario();
+                Clinica cl = new Clinica();
 
-                us.Nome = txtNome.Text;
-                us.Cpf = txtCpf.Text;
-                us.Email = txtEmail.Text;
-                us.Telefone_usuario = txtTel.Text;
-                us.Senha = txtSenha.Text;
+                cl.nome_clinica = txtNomeClinica.Text;
+                cl.cnpj = txtCNPJ.Text;
+                cl.senha = txtSenha.Text;
 
-                new UsuarioController().incluir(us);
+                new ClinicaController().incluir(cl);
 
                 Response.Redirect("/publico/inicio.aspx");
 

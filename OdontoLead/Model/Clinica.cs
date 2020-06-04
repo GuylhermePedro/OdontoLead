@@ -13,10 +13,9 @@ namespace Model
 
         public String nome_clinica { get; set; }
 
-        public String cidade_clinica { get; set; }
-
         public String cnpj { get; set; }
 
-        public Estado estado { get; set; }
+
+        public String senha { get; set; }
     }
 }

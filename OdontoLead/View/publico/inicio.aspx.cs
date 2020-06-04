@@ -19,7 +19,7 @@ namespace View.publico
 
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/publico/novo-usuario.aspx");
+            Response.Redirect("/publico/nova-clincia.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -27,14 +27,14 @@ namespace View.publico
             try
             {
 
-                UsuarioController uc = new UsuarioController();
+                Clinica cl = new Clinica();
 
-                Usuario us = new Usuario();
+                ClinicaController clinicaController = new ClinicaController();
 
-                us.Cpf = txtCpf.Text;
-                us.Senha = txtSenha.Text;
+                cl.cnpj = txtCpf.Text;
+                cl.senha = txtSenha.Text;
 
-                Usuario ul = uc.logar(us);
+                Clinica clinicaLogada = clinicaController.logar(cl);
 
                 // Cria Ticket para autenticação no sistema
                 FormsAuthenticationTicket authTicket = new FormsAuthenticationTicket("  ", false, 15);
@@ -45,22 +45,9 @@ namespace View.publico
                 // Adiciona o Ticket no cookie
                 Response.Cookies.Add(authCookie);
 
-                Session.Add("usuarioLogado", ul);
+                Session.Add("usuarioLogado", clinicaLogada);
 
-                bool verifica = uc.verificar_clinica(ul);
-
-                if(verifica==false) 
-                {
-
-                    Response.Redirect("/privado/dadosclinica.aspx");
-                }
-                else
-                {
-                    Response.Redirect("/privado/dashboard.aspx");
-                }
-
- 
-                
+                Response.Redirect("/privado/dashboard.aspx");
 
             }
             catch (ConsistenciaException ex)

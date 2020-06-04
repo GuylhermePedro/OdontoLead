@@ -9,11 +9,11 @@ namespace View
 {
     public class PageBase : System.Web.UI.Page
     {
-        public Usuario UsuarioLogado
+        public Clinica UsuarioLogado
         {
             get
             {
-                return (Usuario)Session["UsuarioLogado"];
+                return (Clinica)Session["UsuarioLogado"];
             }
             set
             {
