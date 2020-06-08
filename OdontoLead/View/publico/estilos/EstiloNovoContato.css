@@ -1,0 +1,136 @@
+﻿body {
+    background-color: #F1F2F5;
+}
+
+form {
+    width: 311px;
+    padding: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    height: auto;
+}
+
+#txtNome {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#txtTelefone {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#DropSexo {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#txtData {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#DropOrigem {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+#DropStatus {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+#Button1 {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #F6B20F;
+    border-radius: 3px;
+    color: white;
+}
+
+    #Button1:hover {
+        font-size: 20px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+#Label1{
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#Label2 {
+    font-family: Montserrat;
+    font-size: 15x;
+
+}
+
+
+#Label3 {
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#Label4 {
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#Label5 {
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#Label6{
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#Label7 {
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+
+#HyperLink1 {
+    font-family: Montserrat;
+    font-size: 15px;
+}

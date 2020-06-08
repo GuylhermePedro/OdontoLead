@@ -7,11 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace View.publico
+namespace View.privado
 {
 
 
-    public partial class nova_clincia
+    public partial class cadastro_sucesso
     {
 
         /// <summary>
@@ -51,48 +51,30 @@ namespace View.publico
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Controle txtNomeClinica.
+        /// Controle btnNovo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomeClinica;
+        protected global::System.Web.UI.WebControls.Button btnNovo;
 
         /// <summary>
-        /// Controle txtCNPJ.
+        /// Controle btnGerenciar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCNPJ;
+        protected global::System.Web.UI.WebControls.Button btnGerenciar;
 
         /// <summary>
-        /// Controle txtSenha.
+        /// Controle hpMenu.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
-
-        /// <summary>
-        /// Controle btnCadastrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadastrar;
-
-        /// <summary>
-        /// Controle hpLogin.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hpLogin;
+        protected global::System.Web.UI.WebControls.HyperLink hpMenu;
     }
 }

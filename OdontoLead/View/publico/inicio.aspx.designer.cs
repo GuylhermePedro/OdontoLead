@@ -24,13 +24,31 @@ namespace View.publico
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controle Label1.
+        /// Controle Image1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Image Image1;
+
+        /// <summary>
+        /// Controle lblEntrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEntrar;
+
+        /// <summary>
+        /// Controle lblDescricao.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDescricao;
 
         /// <summary>
         /// Controle txtCpf.
@@ -40,15 +58,6 @@ namespace View.publico
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCpf;
-
-        /// <summary>
-        /// Controle Label2.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
         /// Controle txtSenha.
@@ -69,12 +78,12 @@ namespace View.publico
         protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
-        /// Controle btnCadastrar.
+        /// Controle hpCadastro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadastrar;
+        protected global::System.Web.UI.WebControls.HyperLink hpCadastro;
     }
 }

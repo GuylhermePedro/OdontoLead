@@ -6,25 +6,29 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+     <link href="/publico/estilos/EstiloNovaClinica.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Nome da Clíncia"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="106px" ImageUrl="~/publico/imagens/icone.png" Width="208px" />
             <br />
-            <asp:TextBox ID="txtNomeClinica" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="Cadastre-se"></asp:Label>
             <br />
+            <asp:Label ID="Label2" runat="server" Text="Insira os dados nos campos abaixo para realizar o seu cadastro."></asp:Label>
+            <asp:TextBox ID="txtNomeClinica" runat="server" placeholder="Nome da Clínica:"></asp:TextBox>
         </div>
-        <asp:Label ID="Label2" runat="server" Text="CNPJ"></asp:Label>
         <br />
-        <asp:TextBox ID="txtCNPJ" runat="server" MaxLength="14"></asp:TextBox>
+        <asp:TextBox ID="txtCNPJ" runat="server" MaxLength="14" placeholder="CNPJ:"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label3" runat="server" Text="Senha"></asp:Label>
-        <br />
-        <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" placeholder="Senha:"></asp:TextBox>
         <p>
-            <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
+            <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" Width="312px" />
+        </p>
+        <p>
+            <asp:HyperLink ID="hpLogin" runat="server" NavigateUrl="~/publico/inicio.aspx">Clique Aqui para Realizar Login</asp:HyperLink>
         </p>
     </form>
 </body>

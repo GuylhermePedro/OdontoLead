@@ -6,24 +6,29 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="/publico/estilos/EstiloLogin.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="CPF:"></asp:Label>
+        <asp:Image ID="Image1" runat="server" Height="96px" ImageUrl="~/publico/imagens/logo_clinica.png" Width="312px" />
+            <br />
+            <br />
         </div>
-        <asp:TextBox ID="txtCpf" runat="server" MaxLength="14"></asp:TextBox>
+        <asp:Label ID="lblEntrar" runat="server" Text="Entrar"></asp:Label>
         <br />
-        <asp:Label ID="Label2" runat="server" Text="Senha:"></asp:Label>
-        <br />
-        <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+        <asp:Label ID="lblDescricao" runat="server" Text="Se você já possui login, preencha seus dados de acesso a plataforma"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="btnLogin" runat="server" OnClick="Button1_Click" Text="Login" Width="127px" />
+        <asp:TextBox ID="txtCpf" runat="server" MaxLength="14" placeholder="CNPJ:"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtSenha" runat="server" placeholder="SENHA:" TextMode="Password"></asp:TextBox>
         <br />
         <br />
+        <asp:Button ID="btnLogin" runat="server" OnClick="Button1_Click" Text="Acessar" Width="312px" />
         <br />
-        <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" Width="131px" />
+        <br />
+        <asp:HyperLink ID="hpCadastro" runat="server" NavigateUrl="~/publico/nova-clincia.aspx">Ainda não possui login? Clique Aqui para se Cadastrar</asp:HyperLink>
     </form>
 </body>
 </html>

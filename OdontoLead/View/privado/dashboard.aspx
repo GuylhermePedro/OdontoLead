@@ -6,20 +6,21 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="/publico/estilos/EstiloDashboard.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Dashboard"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="112px" ImageUrl="~/publico/imagens/threefree-img.png" Width="110px" />
             <br />
             <br />
-            <asp:Button ID="btnContato" runat="server" Text="CONTATO" OnClick="btnContato_Click" />
+            <asp:Button ID="btnContato" runat="server" Text="GERENCIAR CONTATOS" OnClick="btnContato_Click" Width="313px" />
+            <br />
             <br />
         </div>
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="ADICIONAR CONTATO" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="ADICIONAR CONTATO" Width="315px" />
         <br />
-        <br />
-        <asp:Button ID="btnRelatorio" runat="server" Text="RELATORIO" />
     </form>
 </body>
 </html>

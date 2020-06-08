@@ -23,7 +23,10 @@ namespace Model
 
         public String descricao_lead { get; set; }
 
+        public String status { get; set; }
+
         public Clinica clinina { get; set; }
+
 
     }
 }

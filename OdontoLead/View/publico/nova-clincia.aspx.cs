@@ -42,5 +42,6 @@ namespace View.publico
                 ExibirMensagemAlert(ex.Mensagem);
             }
         }
+
     }
 }

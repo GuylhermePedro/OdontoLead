@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -53,6 +54,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -67,10 +69,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="privado\cadastro-sucesso.aspx" />
     <Content Include="privado\dashboard.aspx" />
     <Content Include="privado\lista-contatos.aspx" />
     <Content Include="privado\novo-contato.aspx" />
     <Content Include="publico\Erro.aspx" />
+    <Content Include="publico\estilos\EstiloCadastroSucesso.css" />
+    <Content Include="publico\estilos\EstiloDashboard.css" />
+    <Content Include="publico\estilos\EstiloListaContatos.css" />
+    <Content Include="publico\estilos\EstiloLogin.css" />
+    <Content Include="publico\estilos\EstiloNovaClinica.css" />
+    <Content Include="publico\estilos\EstiloNovoContato.css" />
+    <Content Include="publico\imagens\icone.png" />
+    <Content Include="publico\imagens\kisspng-check-mark-computer-icons-ok-clip-art-5ae1d51da92964.png" />
+    <Content Include="publico\imagens\logo_clinica.png" />
+    <Content Include="publico\imagens\SITE_logo_clinica %281%29.png" />
+    <Content Include="publico\imagens\threefree-img.png" />
     <Content Include="publico\inicio.aspx" />
     <Content Include="publico\nova-clincia.aspx" />
     <Content Include="Web.config" />
@@ -78,6 +92,13 @@
   <ItemGroup>
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\cadastro-sucesso.aspx.cs">
+      <DependentUpon>cadastro-sucesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\cadastro-sucesso.aspx.designer.cs">
+      <DependentUpon>cadastro-sucesso.aspx</DependentUpon>
     </Compile>
     <Compile Include="privado\dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
@@ -125,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,6 +164,36 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

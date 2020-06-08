@@ -31,14 +31,15 @@ namespace View.privado
                 lead.nome_lead = txtNome.Text;
                 lead.fone_lead = txtTelefone.Text;
                 lead.data_lead = Convert.ToDateTime(txtData.Text);
-                lead.descricao_lead = txtDescricao.Text;
                 lead.origem_lead = DropOrigem.Text;
                 lead.sexo_lead = DropSexo.Text;
+                lead.status = DropStatus.Text;
                 lead.clinina = UsuarioLogado;
 
                 new LeadController().incluir(lead);
 
-                Response.Redirect("/privado/dashboard.aspx");
+                
+                Response.Redirect("/privado/cadastro-sucesso.aspx");
 
             }
             catch (ConsistenciaException ex)

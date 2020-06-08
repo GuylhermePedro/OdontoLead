@@ -10,10 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server" Width="166px"></asp:TextBox>
+            <asp:TextBox ID="txtPesquisar" runat="server" Width="166px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnPesquisar" runat="server" Text="Pesquisar" Width="129px" />
+            <asp:Button ID="btnPesquisar" runat="server" Text="Pesquisar" Width="129px" OnClick="btnPesquisar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnExportar" runat="server" OnClick="btnExportar_Click" Text="Exportar" />
             <br />
             <asp:GridView ID="dgvLista" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" Height="143px"  Width="726px">
                 <AlternatingRowStyle BackColor="PaleGoldenrod" />
@@ -22,8 +23,8 @@
                     <asp:BoundField HeaderText="Telefone" DataField="fone_lead" />
                     <asp:BoundField HeaderText="Genero " DataField="sexo_lead" />
                     <asp:BoundField HeaderText="Data de Contato" DataField="data_lead" />
-                    <asp:BoundField HeaderText="Descrição" DataField="descricao_lead" />
                     <asp:BoundField HeaderText="Origem " DataField="origem_lead" />
+                    <asp:BoundField DataField="status" HeaderText="Status" />
                     <asp:BoundField HeaderText="Editar" />
                     <asp:BoundField HeaderText="Excluir " />
                 </Columns>

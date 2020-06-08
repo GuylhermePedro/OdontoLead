@@ -10,7 +10,7 @@ namespace Controller
 {
     public class LeadController
     {
-        public void incluir(Lead objEntrada)
+            public void incluir(Lead objEntrada)
         {
             if (String.IsNullOrEmpty(objEntrada.nome_lead))
             {
@@ -40,6 +40,13 @@ namespace Controller
                             {
                                 throw new ConsistenciaException("Por favor, digite o genero do Lead");
                             }
+                            else
+                            {
+                                if (String.IsNullOrEmpty(objEntrada.status))
+                                {
+                                    throw new ConsistenciaException("Por favor, digite o Status do Lead");
+                                }
+                            }
                         }
                     }
                 }
@@ -61,20 +68,21 @@ namespace Controller
 
             if (!verificar)
             {
-
-                cmd = new MySqlCommand("insert into lead values(default, @nome, @tel, @sexo, @data, @descricao, @clinica, @origem)");
+                cmd = new MySqlCommand("insert into lead values(default, @nome, @tel, @sexo, @data, @clinica, @origem, @status)");
 
                 cmd.Parameters.Add(new MySqlParameter("nome", objEntrada.nome_lead));
                 cmd.Parameters.Add(new MySqlParameter("tel", objEntrada.fone_lead));
                 cmd.Parameters.Add(new MySqlParameter("sexo", objEntrada.sexo_lead));
                 cmd.Parameters.Add(new MySqlParameter("data", objEntrada.data_lead));
-                cmd.Parameters.Add(new MySqlParameter("descricao", objEntrada.descricao_lead));
                 cmd.Parameters.Add(new MySqlParameter("clinica", objEntrada.clinina.idclinica));
                 cmd.Parameters.Add(new MySqlParameter("origem", objEntrada.origem_lead));
+                cmd.Parameters.Add(new MySqlParameter("status", objEntrada.status));
+
 
                 c.Abrir();
                 c.Executar(cmd);
                 c.Fechar();
+
             }
             else
             {
@@ -82,53 +90,126 @@ namespace Controller
             }
         }
 
-        public List<Lead> Listar(Lead objEntrada)
+            public void Atualizar(Lead objEntrada)
         {
 
-            MySqlCommand cmd = null;
-
-            if (!String.IsNullOrEmpty(objEntrada.fone_lead))
+            if (String.IsNullOrEmpty(objEntrada.nome_lead))
             {
-                cmd = new MySqlCommand("select lead.nome_lead, lead.telefone_lead, lead.sexo, lead.data_lead, lead.descricao_lead, lead.origem_lead from lead where lead.telefone_lead = @tel and lead.idclinica = @clinica");
-
-
-                cmd.Parameters.Add(new MySqlParameter("tel", objEntrada.fone_lead));
-                cmd.Parameters.Add(new MySqlParameter("clinica", objEntrada.clinina.idclinica));
-
+                throw new ConsistenciaException("Por favor, digite o Nome do Contato.");
             }
             else
             {
-                cmd = new MySqlCommand("select lead.nome_lead, lead.telefone_lead, lead.sexo, lead.data_lead, lead.descricao_lead, lead.origem_lead from lead where lead.idclinica = @clinica");
-                cmd.Parameters.Add(new MySqlParameter("clinica", objEntrada.clinina.idclinica));
+                if (String.IsNullOrEmpty(objEntrada.fone_lead))
+                {
+                    throw new ConsistenciaException("Por favor, digite o Telefone do Lead.");
+                }
+                else
+                {
+                    if (String.IsNullOrEmpty(objEntrada.data_lead.ToString()))
+                    {
+                        throw new ConsistenciaException("Por favor, digite a data de Contato.");
+                    }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(objEntrada.origem_lead))
+                        {
+                            throw new ConsistenciaException("Por favor, digite a origem do Lead.");
+                        }
+                        else
+                        {
+                            if (String.IsNullOrEmpty(objEntrada.sexo_lead))
+                            {
+                                throw new ConsistenciaException("Por favor, digite o genero do Lead");
+                            }
+                            else
+                            {
+                                if (String.IsNullOrEmpty(objEntrada.status))
+                                {
+                                    throw new ConsistenciaException("Por favor, digite o Status do Lead");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                MySqlCommand cmd = new MySqlCommand("update lead set nome_lead = @nome, telefone_lead = @fone, sexo= @sexo, data_lead= @data, origem_lead = @origem, status = @status where idclinica = @idclincia");
+
+                cmd.Parameters.Add(new MySqlParameter("nome", objEntrada.nome_lead));
+                cmd.Parameters.Add(new MySqlParameter("fone", objEntrada.fone_lead));
+                cmd.Parameters.Add(new MySqlParameter("sexo", objEntrada.sexo_lead));
+                cmd.Parameters.Add(new MySqlParameter("data", objEntrada.data_lead));
+                cmd.Parameters.Add(new MySqlParameter("origem", objEntrada.origem_lead));
+                cmd.Parameters.Add(new MySqlParameter("status", objEntrada.status));
+                cmd.Parameters.Add(new MySqlParameter("idclincia", objEntrada.clinina.idclinica));
+
+                Conexao c = new Conexao();
+                c.Abrir();
+                c.Executar(cmd);
+                c.Fechar();
             }
-
-            Conexao c = new Conexao();
-
-            c.Abrir();
-
-            MySqlDataReader reader = c.Pesquisar(cmd);
-
-            List<Lead> lstRetorno = new List<Lead>();
-
-            while (reader.Read())
-            {
-                Lead lead = new Lead();
-
-                lead.nome_lead = reader.GetString(0);
-                lead.fone_lead = reader.GetString(1);
-                lead.sexo_lead = reader.GetString(2);
-                lead.data_lead = reader.GetDateTime(3);
-                lead.descricao_lead = reader.GetString(4);
-                lead.origem_lead = reader.GetString(5);
-
-                lstRetorno.Add(lead);
-
-            }
-
-            c.Fechar();
-
-            return lstRetorno;
-
         }
+            public List<Lead> Listar(Lead objEntrada)
+            {
+
+                MySqlCommand cmd = null;
+
+                if (!String.IsNullOrEmpty(objEntrada.nome_lead))
+                {
+                    cmd = new MySqlCommand("select lead.nome_lead, lead.telefone_lead, lead.sexo, lead.data_lead, lead.origem_lead, lead.status from lead where lead.nome_lead like '%@nome%' and lead.idclinica = @clinica");
+
+                    cmd.Parameters.Add(new MySqlParameter("nome", objEntrada.nome_lead));
+                    cmd.Parameters.Add(new MySqlParameter("clinica", objEntrada.clinina.idclinica));
+
+                }
+                else
+                {
+                    cmd = new MySqlCommand("select lead.nome_lead, lead.telefone_lead, lead.sexo, lead.data_lead, lead.origem_lead, lead.status from lead where lead.idclinica = @clinica");
+                    cmd.Parameters.Add(new MySqlParameter("clinica", objEntrada.clinina.idclinica));
+                }
+
+                Conexao c = new Conexao();
+
+                c.Abrir();
+
+                MySqlDataReader reader = c.Pesquisar(cmd);
+
+                List<Lead> lstRetorno = new List<Lead>();
+
+                while (reader.Read())
+                {
+                    Lead lead = new Lead();
+
+                    lead.nome_lead = reader.GetString(0);
+                    lead.fone_lead = reader.GetString(1);
+                    lead.sexo_lead = reader.GetString(2);
+                    lead.data_lead = reader.GetDateTime(3);
+                    lead.origem_lead = reader.GetString(4);
+                    lead.status = reader.GetString(5);
+
+
+                    lstRetorno.Add(lead);
+
+                }
+
+                c.Fechar();
+
+                return lstRetorno;
+
+            }
+
+            public void Excluir(Lead objEntrada)
+            {
+
+                MySqlCommand cmd = new MySqlCommand("delete from lead where idlead = @lead");
+
+                cmd.Parameters.Add(new MySqlParameter("lead", objEntrada.idlead));
+
+                Conexao c = new Conexao();
+                c.Abrir();
+                c.Executar(cmd);
+                c.Fechar();
+
+            }
+
     }
 }
