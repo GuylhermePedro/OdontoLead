@@ -51,6 +51,15 @@ namespace View.privado
         protected global::System.Web.UI.WebControls.Button btnExportar;
 
         /// <summary>
+        /// Controle hpComoFunciona.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hpComoFunciona;
+
+        /// <summary>
         /// Controle dgvLista.
         /// </summary>
         /// <remarks>

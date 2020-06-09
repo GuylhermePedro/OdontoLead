@@ -7,12 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="/publico/estilos/EstiloNovoContato.css" rel="stylesheet" type="text/css" />
-      <script>
-        function funcao1()
-        {
-        alert("Eu sou um alert!");
-        }
-      </script>
 </head>
 <body>
     <form id="form1" runat="server">
