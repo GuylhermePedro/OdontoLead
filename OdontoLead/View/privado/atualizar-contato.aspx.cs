@@ -28,7 +28,7 @@ namespace View.privado
 
             l.clinina = UsuarioLogado;
 
-           l = new LeadController().ListarAlt(l)[0];
+            l = new LeadController().ListarAlt(l)[0];
 
             ViewState.Add("itemSel", l);
 
@@ -50,7 +50,7 @@ namespace View.privado
                 lead.nome_lead = txtNome.Text;
                 lead.fone_lead = txtTel.Text;
                 lead.sexo_lead = dropSexo.Text;
-                lead.sexo_lead = dropSexo.Text;
+                lead.origem_lead = dropOrigem.Text;
                 lead.status = dropStatus.Text;
                 lead.clinina = UsuarioLogado;
 

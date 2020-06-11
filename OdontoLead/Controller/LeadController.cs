@@ -125,7 +125,7 @@ namespace Controller
                         }
                 }
 
-                MySqlCommand cmd = new MySqlCommand("update lead set nome_lead = @nome, telefone_lead = @fone, sexo= @sexo,  origem_lead = @origem, status = @status where idclinica = @idclincia and lead.idlead = @id");
+                MySqlCommand cmd = new MySqlCommand("update lead set nome_lead = @nome , telefone_lead = @fone, sexo= @sexo , origem_lead = @origem , status = @status where idclinica = @idclincia and lead.idlead = @id");
 
                 cmd.Parameters.Add(new MySqlParameter("nome", objEntrada.nome_lead));
                 cmd.Parameters.Add(new MySqlParameter("fone", objEntrada.fone_lead));
@@ -280,7 +280,7 @@ namespace Controller
 
         }
 
-        public List<Lead> ListarAlt(Lead objEntrada)
+            public List<Lead> ListarAlt(Lead objEntrada)
         {
 
             MySqlCommand cmd = null;

@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="/publico/estilos/EstilosAtualizar.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -22,7 +23,7 @@
         <br />
         <asp:Label ID="Label3" runat="server" Text="Sexo"></asp:Label>
         <br />
-        <asp:DropDownList ID="dropSexo" runat="server">
+        <asp:DropDownList ID="dropSexo" runat="server" Width="315px">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Feminino</asp:ListItem>
             <asp:ListItem>Masculino</asp:ListItem>
@@ -36,6 +37,7 @@
             <asp:ListItem>Facebook</asp:ListItem>
             <asp:ListItem>Site</asp:ListItem>
             <asp:ListItem>TV</asp:ListItem>
+            <asp:ListItem>Radio</asp:ListItem>
             <asp:ListItem>Desconhecido</asp:ListItem>
         </asp:DropDownList>
         <br />
@@ -52,7 +54,7 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:Button ID="btnAtualizar" runat="server" OnClick="btnAtualizar_Click" Text="Atualizar" />
+        <asp:Button ID="btnAtualizar" runat="server" OnClick="btnAtualizar_Click" Text="Atualizar" Width="314px" />
     </form>
 </body>
 </html>

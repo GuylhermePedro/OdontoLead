@@ -82,6 +82,7 @@
     <Content Include="publico\estilos\EstiloLogin.css" />
     <Content Include="publico\estilos\EstiloNovaClinica.css" />
     <Content Include="publico\estilos\EstiloNovoContato.css" />
+    <Content Include="publico\estilos\EstilosAtualizar.css" />
     <Content Include="publico\imagens\16alterar.png" />
     <Content Include="publico\imagens\icone.png" />
     <Content Include="publico\imagens\kisspng-check-mark-computer-icons-ok-clip-art-5ae1d51da92964.png" />
