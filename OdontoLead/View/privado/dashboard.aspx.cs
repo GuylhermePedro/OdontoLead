@@ -25,5 +25,9 @@ namespace View.privado
             Response.Redirect("/privado/lista-contatos.aspx");
         }
 
+        protected void btnExportar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/privado/exportar.aspx");
+        }
     }
 }

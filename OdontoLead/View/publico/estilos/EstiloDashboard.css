@@ -40,3 +40,30 @@ form {
         font-size: 20px;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+
+#btnImportar {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #F6B20F;
+    border-radius: 3px;
+    color: white;
+    font-family: Montserrat;
+}
+
+    #btnImportar:hover {
+        font-size: 20px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+#btnExportar {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #F6B20F;
+    border-radius: 3px;
+    color: white;
+    font-family: Montserrat;
+}
+
+    #btnExportar:hover {
+        font-size: 20px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }

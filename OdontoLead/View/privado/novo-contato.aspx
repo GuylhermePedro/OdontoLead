@@ -31,7 +31,7 @@
         <p>
             <asp:Label ID="Label4" runat="server" Text="Data de Contato"></asp:Label>
         </p>
-        <asp:TextBox ID="txtData" runat="server" TextMode="DateTimeLocal"></asp:TextBox>
+        <asp:TextBox ID="txtData" runat="server" TextMode="Date"></asp:TextBox>
         <br />
         <br />
         <br />

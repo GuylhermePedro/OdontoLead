@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <asp:Image ID="Image1" runat="server" Height="96px" ImageUrl="~/publico/imagens/logo_clinica.png" Width="312px" />
+        <asp:Image ID="Image1" runat="server" Height="101px" ImageUrl="~/publico/imagens/odontolead.png" Width="312px" />
             <br />
             <br />
         </div>

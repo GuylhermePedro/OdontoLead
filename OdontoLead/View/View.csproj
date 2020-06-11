@@ -69,8 +69,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="privado\atualizar-contato.aspx" />
     <Content Include="privado\cadastro-sucesso.aspx" />
     <Content Include="privado\dashboard.aspx" />
+    <Content Include="privado\exportar.aspx" />
     <Content Include="privado\lista-contatos.aspx" />
     <Content Include="privado\novo-contato.aspx" />
     <Content Include="publico\Erro.aspx" />
@@ -80,9 +82,11 @@
     <Content Include="publico\estilos\EstiloLogin.css" />
     <Content Include="publico\estilos\EstiloNovaClinica.css" />
     <Content Include="publico\estilos\EstiloNovoContato.css" />
+    <Content Include="publico\imagens\16alterar.png" />
     <Content Include="publico\imagens\icone.png" />
     <Content Include="publico\imagens\kisspng-check-mark-computer-icons-ok-clip-art-5ae1d51da92964.png" />
     <Content Include="publico\imagens\logo_clinica.png" />
+    <Content Include="publico\imagens\odontolead.png" />
     <Content Include="publico\imagens\SITE_logo_clinica %281%29.png" />
     <Content Include="publico\imagens\threefree-img.png" />
     <Content Include="publico\inicio.aspx" />
@@ -92,6 +96,13 @@
   <ItemGroup>
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\atualizar-contato.aspx.cs">
+      <DependentUpon>atualizar-contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\atualizar-contato.aspx.designer.cs">
+      <DependentUpon>atualizar-contato.aspx</DependentUpon>
     </Compile>
     <Compile Include="privado\cadastro-sucesso.aspx.cs">
       <DependentUpon>cadastro-sucesso.aspx</DependentUpon>
@@ -106,6 +117,13 @@
     </Compile>
     <Compile Include="privado\dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privado\exportar.aspx.cs">
+      <DependentUpon>exportar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privado\exportar.aspx.designer.cs">
+      <DependentUpon>exportar.aspx</DependentUpon>
     </Compile>
     <Compile Include="privado\lista-contatos.aspx.cs">
       <DependentUpon>lista-contatos.aspx</DependentUpon>

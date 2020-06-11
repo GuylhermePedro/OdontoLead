@@ -13,14 +13,18 @@ namespace View.privado
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Incluir();
-        }
 
+            Incluir();
+
+        }
         public void Incluir()
         {
             try
@@ -47,5 +51,7 @@ namespace View.privado
                 ExibirMensagemAlert(ex.Mensagem);
             }
         }
+
+
     }
 }

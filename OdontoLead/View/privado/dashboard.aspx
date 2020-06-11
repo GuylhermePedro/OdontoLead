@@ -21,6 +21,8 @@
         </div>
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="ADICIONAR CONTATO" Width="315px" />
         <br />
+        <br />
+        <asp:Button ID="btnExportar" runat="server" OnClick="btnExportar_Click" Text="Exportar" Width="315px" />
     </form>
 </body>
 </html>
