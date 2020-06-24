@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Atualizar</title>
-    <link rel="shortcut icon" href="~/publico/imagens/favicon.ico" " />
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.ico"/>
     <link href="/publico/estilos/EstilosAtualizar.css" rel="stylesheet" type="text/css" />
 </head>
 <body>

@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Novo Contato</title>
-    <link rel="shortcut icon" href="~/publico/imagens/favicon.ico" " />
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.ico" />
     <link href="/publico/estilos/EstiloNovoContato.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
