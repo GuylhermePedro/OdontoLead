@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Cadastro</title>
-    <link rel="shortcut icon" href="~/publico/imagens/favicon.png" " />
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.ico" " />
      <link href="/publico/estilos/EstiloNovaClinica.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
