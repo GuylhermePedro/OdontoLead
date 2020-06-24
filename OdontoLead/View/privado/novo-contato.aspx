@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Novo Contato</title>
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.png" " />
     <link href="/publico/estilos/EstiloNovoContato.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -40,9 +41,13 @@
         <asp:DropDownList ID="DropOrigem" runat="server" Height="65px" Width="315px">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Facebook</asp:ListItem>
-            <asp:ListItem>Site</asp:ListItem>
+            <asp:ListItem>Instagram</asp:ListItem>
+            <asp:ListItem>Google</asp:ListItem>
+            <asp:ListItem>Televisão</asp:ListItem>
             <asp:ListItem>Rádio</asp:ListItem>
-            <asp:ListItem>TV</asp:ListItem>
+            <asp:ListItem>Outdoor</asp:ListItem>
+            <asp:ListItem>Parcerias</asp:ListItem>
+            <asp:ListItem>Site</asp:ListItem>
             <asp:ListItem>Desconhecido </asp:ListItem>
         </asp:DropDownList>
         <br />
@@ -53,6 +58,7 @@
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Aguardando Contato</asp:ListItem>
             <asp:ListItem>Em conversa</asp:ListItem>
+            <asp:ListItem>Não respondeu </asp:ListItem>
             <asp:ListItem>Agendado</asp:ListItem>
             <asp:ListItem>Avaliado</asp:ListItem>
             <asp:ListItem>Cliente</asp:ListItem>

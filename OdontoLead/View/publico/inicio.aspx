@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Login</title>
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.png" " />
     <link href="/publico/estilos/EstiloLogin.css" rel="stylesheet" type="text/css" />
 </head>
 <body>

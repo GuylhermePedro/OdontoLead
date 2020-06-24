@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Atualizar</title>
+    <link rel="shortcut icon" href="~/publico/imagens/favicon.png" " />
     <link href="/publico/estilos/EstilosAtualizar.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,9 +36,13 @@
         <asp:DropDownList ID="dropOrigem" runat="server">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Facebook</asp:ListItem>
+            <asp:ListItem>Instagram </asp:ListItem>
+            <asp:ListItem>Google</asp:ListItem>
+            <asp:ListItem>Televisão</asp:ListItem>
+            <asp:ListItem>Rádio</asp:ListItem>
+            <asp:ListItem>Outdoor</asp:ListItem>
+            <asp:ListItem>Parcerias</asp:ListItem>
             <asp:ListItem>Site</asp:ListItem>
-            <asp:ListItem>TV</asp:ListItem>
-            <asp:ListItem>Radio</asp:ListItem>
             <asp:ListItem>Desconhecido</asp:ListItem>
         </asp:DropDownList>
         <br />
@@ -48,6 +53,7 @@
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Aguardando Contato</asp:ListItem>
             <asp:ListItem>Em conversa</asp:ListItem>
+            <asp:ListItem>Não respondeu </asp:ListItem>
             <asp:ListItem>Agendado</asp:ListItem>
             <asp:ListItem>Avaliado</asp:ListItem>
             <asp:ListItem>Cliente</asp:ListItem>
@@ -55,6 +61,8 @@
         <br />
         <br />
         <asp:Button ID="btnAtualizar" runat="server" OnClick="btnAtualizar_Click" Text="Atualizar" Width="314px" />
+        <br />
+        <asp:HyperLink ID="hpVoltar" runat="server" NavigateUrl="~/privado/lista-contatos.aspx">Voltar</asp:HyperLink>
     </form>
 </body>
 </html>

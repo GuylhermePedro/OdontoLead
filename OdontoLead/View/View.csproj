@@ -78,17 +78,20 @@
     <Content Include="publico\Erro.aspx" />
     <Content Include="publico\estilos\EstiloCadastroSucesso.css" />
     <Content Include="publico\estilos\EstiloDashboard.css" />
+    <Content Include="publico\estilos\EstiloExportar.css" />
     <Content Include="publico\estilos\EstiloListaContatos.css" />
     <Content Include="publico\estilos\EstiloLogin.css" />
     <Content Include="publico\estilos\EstiloNovaClinica.css" />
     <Content Include="publico\estilos\EstiloNovoContato.css" />
     <Content Include="publico\estilos\EstilosAtualizar.css" />
     <Content Include="publico\imagens\16alterar.png" />
+    <Content Include="publico\imagens\724827.png" />
     <Content Include="publico\imagens\icone.png" />
     <Content Include="publico\imagens\kisspng-check-mark-computer-icons-ok-clip-art-5ae1d51da92964.png" />
     <Content Include="publico\imagens\logo_clinica.png" />
     <Content Include="publico\imagens\odontolead.png" />
-    <Content Include="publico\imagens\SITE_logo_clinica %281%29.png" />
+    <Content Include="publico\imagens\favicon.png" />
+    <Content Include="publico\imagens\SITE_logo_clinica.png" />
     <Content Include="publico\imagens\threefree-img.png" />
     <Content Include="publico\inicio.aspx" />
     <Content Include="publico\nova-clincia.aspx" />
@@ -166,6 +169,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\odontolead - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

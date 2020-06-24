@@ -58,7 +58,9 @@ form {
     box-sizing: border-box;
     border-radius: 5px;
     font-family: Montserrat;
-    #txtData {
+}
+
+#txtData {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -140,7 +142,7 @@ form {
 
 #Label2 {
     font-family: Montserrat;
-    font-size: 15x;
+    font-size: 15px;
 
 }
 
@@ -181,6 +183,11 @@ form {
 
 
 #HyperLink1 {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+#hpVoltar {
     font-family: Montserrat;
     font-size: 15px;
 }

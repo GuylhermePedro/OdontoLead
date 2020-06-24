@@ -1,0 +1,68 @@
+﻿body {
+    background-color: #F1F2F5;
+}
+
+form {
+    width: 311px;
+    padding: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    height: auto;
+}
+
+#btnExportar {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #F6B20F;
+    border-radius: 3px;
+    color: white;
+}
+
+    #btnExportar:hover {
+        font-size: 20px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+#dropOrigem {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#dropStatus {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#Label1 {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+
+#Label2 {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+
+#Label3 {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+
+#hpVoltar {
+    font-family: Montserrat;
+    font-size: 15px;
+}
