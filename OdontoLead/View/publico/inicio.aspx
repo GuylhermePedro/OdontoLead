@@ -29,7 +29,6 @@
         <asp:Button ID="btnLogin" runat="server" OnClick="Button1_Click" Text="Acessar" Width="312px" />
         <br />
         <br />
-        <asp:HyperLink ID="hpCadastro" runat="server" NavigateUrl="~/publico/nova-clincia.aspx">Ainda não possui login? Clique Aqui para se Cadastrar</asp:HyperLink>
     </form>
 </body>
 </html>

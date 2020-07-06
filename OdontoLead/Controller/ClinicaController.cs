@@ -75,6 +75,20 @@ namespace Controller
                     {
                         throw new ConsistenciaException("Por favor, digite a senha.");
                     }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(objEntrada.endereco))
+                        {
+                            throw new ConsistenciaException("Por favor, digite o endereço.");
+                        }
+                        else
+                        {
+                            if (String.IsNullOrEmpty(objEntrada.email))
+                            {
+                                throw new ConsistenciaException("Por favor, digite o email.");
+                            }
+                        }
+                    }
                 }
             }
 
@@ -95,11 +109,13 @@ namespace Controller
             if (!verificar)
             {
 
-                cmd = new MySqlCommand("insert into clinica values(default, @nome_clinica, @cnpj, md5(@senha))");
+                cmd = new MySqlCommand("insert into clinica values(default, @nome_clinica, @cnpj, md5(@senha), @endereco, @email)");
 
                 cmd.Parameters.Add(new MySqlParameter("nome_clinica", objEntrada.nome_clinica));
                 cmd.Parameters.Add(new MySqlParameter("cnpj", objEntrada.cnpj));
                 cmd.Parameters.Add(new MySqlParameter("senha", objEntrada.senha));
+                cmd.Parameters.Add(new MySqlParameter("endereco", objEntrada.endereco));
+                cmd.Parameters.Add(new MySqlParameter("email", objEntrada.email));
 
                 c.Abrir();
                 c.Executar(cmd);

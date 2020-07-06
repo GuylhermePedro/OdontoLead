@@ -21,22 +21,22 @@
             <br />
             <asp:Label ID="Label1" runat="server" Text="Origem"></asp:Label>
             <br />
-            <asp:DropDownList ID="dropOrigem" runat="server" Height="16px" Width="315px">
+            <asp:DropDownList ID="dropOrigem" runat="server" Height="55px" Width="315px">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Facebook</asp:ListItem>
                 <asp:ListItem>Instagram </asp:ListItem>
                 <asp:ListItem>Google</asp:ListItem>
-                <asp:ListItem>SiteTelevisão</asp:ListItem>
+                <asp:ListItem>Televisão</asp:ListItem>
                 <asp:ListItem>Rádio</asp:ListItem>
                 <asp:ListItem>Outdoor</asp:ListItem>
-                <asp:ListItem>TelevisãoParcerias</asp:ListItem>
+                <asp:ListItem>Parcerias</asp:ListItem>
                 <asp:ListItem>Site</asp:ListItem>
                 <asp:ListItem>Desconhecido</asp:ListItem>
             </asp:DropDownList>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Status"></asp:Label>
             <br />
-            <asp:DropDownList ID="dropStatus" runat="server" Height="16px" Width="315px">
+            <asp:DropDownList ID="dropStatus" runat="server" Height="55px" Width="315px">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Aguardando Contato</asp:ListItem>
                 <asp:ListItem>Em conversa</asp:ListItem>

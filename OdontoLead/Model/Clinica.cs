@@ -15,7 +15,9 @@ namespace Model
 
         public String cnpj { get; set; }
 
+        public String endereco { get; set; }
 
+        public String email { get; set; }
         public String senha { get; set; }
     }
 }
