@@ -32,7 +32,7 @@ namespace View.publico
                 cl.cnpj = txtCNPJ.Text;
                 cl.senha = txtSenha.Text;
                 cl.email = txtEmail.Text;
-                cl.endereco = txtEmail.Text;
+                cl.endereco = txtEndereco.Text;
 
                 new ClinicaController().incluir(cl);
 

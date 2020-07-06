@@ -94,7 +94,7 @@
     <Content Include="publico\imagens\SITE_logo_clinica.png" />
     <Content Include="publico\imagens\threefree-img.png" />
     <Content Include="publico\inicio.aspx" />
-    <Content Include="publico\nova-clincia.aspx" />
+    <Content Include="publico\nova-clinica.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -158,12 +158,12 @@
     <Compile Include="publico\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="publico\nova-clincia.aspx.cs">
-      <DependentUpon>nova-clincia.aspx</DependentUpon>
+    <Compile Include="publico\nova-clinica.aspx.cs">
+      <DependentUpon>nova-clinica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="publico\nova-clincia.aspx.designer.cs">
-      <DependentUpon>nova-clincia.aspx</DependentUpon>
+    <Compile Include="publico\nova-clinica.aspx.designer.cs">
+      <DependentUpon>nova-clinica.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="nova-clincia.aspx.cs" Inherits="View.publico.nova_clincia" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="nova-clinica.aspx.cs" Inherits="View.publico.nova_clincia" %>
 
 <!DOCTYPE html>
 
