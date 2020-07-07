@@ -8,6 +8,16 @@
     <title>Novo Contato</title>
     <link rel="shortcut icon" href="~/publico/imagens/favicon.ico" />
     <link href="/publico/estilos/EstiloNovoContato.css" rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171631241-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171631241-1');
+</script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -57,10 +67,12 @@
         <asp:DropDownList ID="DropStatus" runat="server" Height="65px" Width="315px">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Aguardando Contato</asp:ListItem>
-            <asp:ListItem>Em conversa</asp:ListItem>
-            <asp:ListItem>Não respondeu </asp:ListItem>
-            <asp:ListItem>Agendado</asp:ListItem>
-            <asp:ListItem>Avaliado</asp:ListItem>
+            <asp:ListItem>Não quis agendar</asp:ListItem>
+            <asp:ListItem>Solicitou contato no futuro </asp:ListItem>
+            <asp:ListItem>Não respondeu</asp:ListItem>
+            <asp:ListItem>Agendado </asp:ListItem>
+            <asp:ListItem>Agendou e não veio </asp:ListItem>
+            <asp:ListItem>Avaliado </asp:ListItem>
             <asp:ListItem>Cliente</asp:ListItem>
         </asp:DropDownList>
         <p>

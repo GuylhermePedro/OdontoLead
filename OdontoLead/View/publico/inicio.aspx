@@ -8,6 +8,16 @@
     <title>Login</title>
     <link rel="shortcut icon"  href="~/publico/imagens/favicon.ico" />
     <link href="/publico/estilos/EstiloLogin.css"  rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171631241-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171631241-1');
+</script>
+
 </head>
 <body>
     <form id="form1" runat="server">

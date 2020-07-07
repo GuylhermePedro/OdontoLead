@@ -49,6 +49,7 @@
     <Compile Include="LeadController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClinicaController.cs" />
+    <Compile Include="StatusController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

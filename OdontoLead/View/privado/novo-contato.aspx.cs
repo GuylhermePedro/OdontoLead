@@ -15,7 +15,6 @@ namespace View.privado
         {
             if (!Page.IsPostBack)
             {
-                
             }
         }
 
@@ -50,6 +49,18 @@ namespace View.privado
             {
                 ExibirMensagemAlert(ex.Mensagem);
             }
+        }
+
+        public void CarregarStatus()
+        {
+
+            List<Status> lst = new StatusController().Listar(new Status());
+
+            foreach (Status item in lst)
+            {
+                DropStatus.Items.Add(new ListItem(item.Descricao_status, item.idStatus.ToString()));
+            }
+
         }
 
 
